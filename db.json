@@ -1,0 +1,22 @@
+{
+    "players": [
+      {
+        "id": 1,
+        "fname": "Katarina",
+        "lname": "Jokic",
+        "classYear": 2025,
+        "location": "New York",
+        "dominantHand": "right",
+        "contacted": false
+      },
+      {
+        "id": 2,
+        "fname": "Brittany",
+        "lname": "Collens",
+        "classYear": 2026,
+        "location": "Massachusetts",
+        "dominantHand": "right",
+        "contacted": false
+      }
+    ]
+  }
