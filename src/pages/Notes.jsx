@@ -9,6 +9,7 @@ function Notes() {
         <>
             <h1>Notes Page</h1>
             <h2>{player.fname} {player.lname}</h2>
+            <p>{player.notes}</p>
         </>
     )
 }
