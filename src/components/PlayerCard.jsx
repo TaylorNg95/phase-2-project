@@ -4,8 +4,11 @@ function PlayerCard({player, deletePlayer}) {
     const {id, fname, lname, classYear, location, dominantHand, contacted} = player
 
     function handleDelete(){
-        fetch(`http://localhost:3000/players/` + id, {method: 'DELETE'})
+        const userConfirmed = confirm(`Are you sure you want to delete ${player.fname} ${player.lname}'s profile?`)
+        if(userConfirmed){
+            fetch(`http://localhost:3000/players/` + id, {method: 'DELETE'})
             .then(response => deletePlayer(id))
+        }
     }
     
     return (

@@ -59,8 +59,8 @@ function NewPlayerForm() {
                 <label>Location: <input type='text'name='location' value={formData.location} onChange={handleChange}/></label><br />
                 <label>Dominant Hand:
                     <select name='dominantHand' value={formData.dominantHand} onChange={handleChange}>
-                        <option value='left'>Left</option>
                         <option value='right'>Right</option>
+                        <option value='left'>Left</option>
                     </select>
                 </label><br />
                 <label>Contacted?
