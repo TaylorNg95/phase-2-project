@@ -23,7 +23,7 @@ function App() {
         <NavBar />
       </header>
       <h1>App Page</h1>
-      <Outlet context={{players}}/>
+      <Outlet context={{players: players}}/>
     </>
   )
 }
