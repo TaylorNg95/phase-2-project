@@ -20,6 +20,10 @@ function App() {
     setPlayers([...players, newPlayer])
   }
 
+  function deletePlayer(id){
+    setPlayers(players.filter(player => player.id !== id))
+  }
+
   if(loading){
     return <h1>Loading...</h1>
   } else return (
@@ -28,7 +32,7 @@ function App() {
         <NavBar />
       </header>
       <h1>App Page</h1>
-      <Outlet context={{players: players, addNewPlayer, loading: loading}}/>
+      <Outlet context={{players: players, addNewPlayer, loading: loading, deletePlayer}}/>
     </>
   )
 }

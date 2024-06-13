@@ -5,7 +5,7 @@ import PlayerCard from "../components/PlayerCard"
 
 function PlayerList() {
     console.log('in player list')
-    const {players, loading} = useOutletContext()
+    const {players, loading, deletePlayer} = useOutletContext()
     const [filter, setFilter] = useState('All')
     const [search, setSearch] = useState('')
     
@@ -24,7 +24,7 @@ function PlayerList() {
         <>
             <h1>Player List Page</h1>
             <FilterBar filter={filter} setFilter={setFilter} search={search} setSearch={setSearch}/>
-            {players.map(player => <PlayerCard key={player.id} player={player}/>)}
+            {players.map(player => <PlayerCard key={player.id} player={player} deletePlayer={deletePlayer}/>)}
         </>
     )
 }

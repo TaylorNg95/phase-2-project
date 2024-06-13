@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom"
 
-function PlayerCard({player}) {
+function PlayerCard({player, deletePlayer}) {
     const {id, fname, lname, classYear, location, dominantHand, contacted} = player
+
+    function handleDelete(){
+        fetch(`http://localhost:3000/players/` + id, {method: 'DELETE'})
+            .then(response => deletePlayer(id))
+    }
     
     return (
         <>
@@ -11,6 +16,7 @@ function PlayerCard({player}) {
             <p>{location}</p>
             <p>{contacted ? 'Contacted' : 'Not Contacted'}</p>
             <p><Link to={`/notes/${id}`}>View Notes</Link></p>
+            <button onClick={handleDelete}>Delete Player</button>
         </>
     )
 }
