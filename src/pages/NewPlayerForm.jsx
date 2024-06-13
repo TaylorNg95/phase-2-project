@@ -1,6 +1,11 @@
 import { useState } from "react"
+import { useNavigate, useOutletContext } from "react-router-dom"
 
 function NewPlayerForm() {
+    console.log('in new player form')
+    const {addNewPlayer} = useOutletContext()
+    const navigate = useNavigate()
+
     const initialFormData = {
         fname: '',
         lname: '',
@@ -17,10 +22,28 @@ function NewPlayerForm() {
         setFormData({...formData, [e.target.name]: e.target.value})
     }
 
+    function handleSubmit(e){
+        e.preventDefault()
+        fetch('http://localhost:3000/players', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+            .then(response => response.json())
+            .then(newPlayer => {
+                console.log('form has been submitted: ', newPlayer)
+                addNewPlayer(newPlayer)
+                setFormData(initialFormData)
+                navigate('/players')
+            })
+    }
+
     return (
         <>
             <h1>New Player Form Page</h1>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>First Name: <input type='text' name='fname' value={formData.fname} onChange={handleChange}/></label><br />
                 <label>Last Name: <input type='text' name='lname' value={formData.lname} onChange={handleChange}/></label><br />
                 <label>Class Year: 
@@ -46,7 +69,8 @@ function NewPlayerForm() {
                         <option value='true'>Yes</option>
                     </select>
                 </label><br />
-                <label>Notes:<br /><textarea rows='10' cols='50' placeholder='Add notes here' name='notes' value={formData.notes} onChange={handleChange}></textarea></label>
+                <label>Notes:<br /><textarea rows='10' cols='50' placeholder='Add notes here' name='notes' value={formData.notes} onChange={handleChange}></textarea></label><br />
+                <input type='submit' value='Add New Player'/>
             </form>
         </>
     )

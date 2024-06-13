@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import NavBar from "../components/NavBar"
 
 function App() {
+  console.log('in App')
   const [players, setPlayers] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -15,6 +16,10 @@ function App() {
       })
   }, [])
 
+  function addNewPlayer(newPlayer){
+    setPlayers([...players, newPlayer])
+  }
+
   if(loading){
     return <h1>Loading...</h1>
   } else return (
@@ -23,7 +28,7 @@ function App() {
         <NavBar />
       </header>
       <h1>App Page</h1>
-      <Outlet context={{players: players}}/>
+      <Outlet context={{players: players, addNewPlayer, loading: loading}}/>
     </>
   )
 }

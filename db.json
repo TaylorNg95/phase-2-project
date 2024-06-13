@@ -1,44 +1,44 @@
 {
-    "players": [
-      {
-        "id": 1,
-        "fname": "Katarina",
-        "lname": "Jokic",
-        "classYear": 2025,
-        "location": "New York",
-        "dominantHand": "right",
-        "contacted": false,
-        "notes": "Watched her play at Orange Bowl. Solid player, moves well."
-      },
-      {
-        "id": 2,
-        "fname": "Brittany",
-        "lname": "Collens",
-        "classYear": 2026,
-        "location": "Massachusetts",
-        "dominantHand": "Right",
-        "contacted": false,
-        "notes": "Watched her play at Aronomink. Strong for size, great sportsmanship."
-      },
-      {
-        "id": 3,
-        "fname": "Lauren",
-        "lname": "Proctor",
-        "classYear": 2025,
-        "location": "Florida",
-        "dominantHand": "Right",
-        "contacted": false,
-        "notes": "Watched her play at Eddy Herr. Very crafty, good hands."
-      },
-      {
-        "id": 4,
-        "fname": "Sofia",
-        "lname": "Sanchez",
-        "classYear": 2026,
-        "location": "Mexico",
-        "dominantHand": "Left",
-        "contacted": true,
-        "notes": "Watched her play at junior ITF in Mexico. Consistent and a good fighter."
-      }
-    ]
-  }
+  "players": [
+    {
+      "id": 1,
+      "fname": "Katarina",
+      "lname": "Jokic",
+      "classYear": 2025,
+      "location": "New York",
+      "dominantHand": "right",
+      "contacted": false,
+      "notes": "Watched her play at Orange Bowl. Solid player, moves well."
+    },
+    {
+      "id": 2,
+      "fname": "Brittany",
+      "lname": "Collens",
+      "classYear": 2026,
+      "location": "Massachusetts",
+      "dominantHand": "Right",
+      "contacted": false,
+      "notes": "Watched her play at Aronomink. Strong for size, great sportsmanship."
+    },
+    {
+      "id": 3,
+      "fname": "Lauren",
+      "lname": "Proctor",
+      "classYear": 2025,
+      "location": "Florida",
+      "dominantHand": "Right",
+      "contacted": false,
+      "notes": "Watched her play at Eddy Herr. Very crafty, good hands."
+    },
+    {
+      "id": 4,
+      "fname": "Sofia",
+      "lname": "Sanchez",
+      "classYear": 2026,
+      "location": "Mexico",
+      "dominantHand": "Left",
+      "contacted": true,
+      "notes": "Watched her play at junior ITF in Mexico. Consistent and a good fighter."
+    }
+  ]
+}

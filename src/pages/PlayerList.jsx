@@ -4,10 +4,12 @@ import FilterBar from "../components/FilterBar"
 import PlayerCard from "../components/PlayerCard"
 
 function PlayerList() {
-    const {players} = useOutletContext()
+    console.log('in player list')
+    const {players, loading} = useOutletContext()
     const [filter, setFilter] = useState('All')
     const [search, setSearch] = useState('')
-
+    
+    console.log(players)
     const displayedPlayers = players.sort((a, b) => a.fname.toLowerCase().localeCompare(b.fname.toLowerCase()))
         .filter(player => {
             if(filter === 'All'){
@@ -16,11 +18,13 @@ function PlayerList() {
         })
         .filter(player => (player.fname + ' ' + player.lname).toLowerCase().includes(search.toLowerCase()))
 
-    return (
+    if(loading){
+        return <h1>Loading...</h1>
+    } else return (
         <>
             <h1>Player List Page</h1>
             <FilterBar filter={filter} setFilter={setFilter} search={search} setSearch={setSearch}/>
-            {displayedPlayers.map(player => <PlayerCard key={player.id} player={player}/>)}
+            {players.map(player => <PlayerCard key={player.id} player={player}/>)}
         </>
     )
 }
