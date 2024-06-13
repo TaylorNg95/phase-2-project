@@ -7,7 +7,8 @@ function Notes() {
 
     return (
         <>
-            <h1>{player.fname} {player.lname}</h1>
+            <h1>Notes Page</h1>
+            <h2>{player.fname} {player.lname}</h2>
         </>
     )
 }

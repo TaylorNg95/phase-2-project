@@ -5,7 +5,6 @@ function NavBar() {
         <nav>
             <NavLink to='/players'>Players</NavLink>
             <NavLink to='/new'>New Player</NavLink>
-            <NavLink to='/notes'>Notes</NavLink>
         </nav>
     )
 }
