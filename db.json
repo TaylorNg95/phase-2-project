@@ -6,8 +6,9 @@
         "lname": "Jokic",
         "classYear": 2025,
         "location": "New York",
-        "dominantHand": "right",
-        "contacted": false
+        "dominantHand": "Right",
+        "contacted": false,
+        "notes": "Watched her play at Orange Bowl. Solid player, moves well."
       },
       {
         "id": 2,
@@ -15,8 +16,9 @@
         "lname": "Collens",
         "classYear": 2026,
         "location": "Massachusetts",
-        "dominantHand": "right",
-        "contacted": false
+        "dominantHand": "Right",
+        "contacted": false,
+        "notes": "Watched her play at Aronomink. Strong for size, great sportsmanship."
       }
     ]
   }

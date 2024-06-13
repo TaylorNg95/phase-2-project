@@ -19,7 +19,7 @@ const routes = [
                 element: <NewPlayerForm />
             },
             {
-                path: '/notes',
+                path: '/notes/:lname',
                 element: <Notes />
             }
         ]

@@ -1,7 +1,15 @@
-function PlayerCard() {
+import { Link } from "react-router-dom"
+
+function PlayerCard({player}) {
+    const {fname, lname, classYear, location, dominantHand, contacted, notes} = player
     return (
         <>
-            <h1>Player Card</h1>
+            <h2>{fname} {lname}</h2>
+            <p>Class of {classYear}</p>
+            <p>{dominantHand}</p>
+            <p>{location}</p>
+            <p>{contacted ? 'Contacted' : 'Not Contacted'}</p>
+            <p><Link to={`/notes/${player.lname.toLowerCase()}`}>View Notes</Link></p>
         </>
     )
 }
