@@ -3,6 +3,8 @@ import { useOutletContext } from "react-router-dom"
 import FilterBar from "../components/FilterBar"
 import PlayerCard from "../components/PlayerCard"
 
+import { Grid, Container } from "@mui/material"
+
 function PlayerList() {
     console.log('in player list')
     const {players, loading, deletePlayer} = useOutletContext()
@@ -24,7 +26,11 @@ function PlayerList() {
         <>
             <h1>Player List Page</h1>
             <FilterBar filter={filter} setFilter={setFilter} search={search} setSearch={setSearch}/>
-            {displayedPlayers.map(player => <PlayerCard key={player.id} player={player} deletePlayer={deletePlayer}/>)}
+            <Container>
+                <Grid container spacing={2}>    
+                    {displayedPlayers.map(player => <PlayerCard key={player.id} player={player} deletePlayer={deletePlayer}/>)}
+                </Grid>
+            </Container>
         </>
     )
 }
