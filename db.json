@@ -6,11 +6,10 @@
       "lname": "Jokic",
       "classYear": 2025,
       "location": "New York",
-      "dominantHand": "right",
+      "dominantHand": "Right-Handed",
       "contacted": false,
       "notes": [
-        "Watched her play at Orange Bowl. Solid player, moves well.",
-        "Got to see her again, feeling good about this."
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
       ]
     },
     {
@@ -19,11 +18,10 @@
       "lname": "Collens",
       "classYear": 2026,
       "location": "Massachusetts",
-      "dominantHand": "left",
+      "dominantHand": "Left-Handed",
       "contacted": "true",
       "notes": [
-        "Watched her play at Aronomink. Strong for size, great sportsmanship.",
-        "Solid player to look out for."
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
       ]
     },
     {
@@ -32,11 +30,10 @@
       "lname": "Proctor",
       "classYear": 2025,
       "location": "Florida",
-      "dominantHand": "right",
+      "dominantHand": "Right-Handed",
       "contacted": false,
       "notes": [
-        "Watched her play at Eddy Herr. Very crafty, good hands.",
-        "Has clearly put in some good work"
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
       ]
     },
     {
@@ -45,11 +42,70 @@
       "lname": "Sanchez",
       "classYear": 2026,
       "location": "Mexico",
-      "dominantHand": "right",
+      "dominantHand": "Right-Handed",
       "contacted": true,
       "notes": [
-        "Watched her play at junior ITF in Mexico. Consistent and a good fighter.",
-        "Solid doubles player as well, good awareness of the court."
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
+      ]
+    },
+    {
+      "id": "5",
+      "fname": "Justina",
+      "lname": "Mikulskyte",
+      "classYear": 2027,
+      "location": "Lithuania",
+      "dominantHand": "Right-Handed",
+      "contacted": false,
+      "notes": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
+      ]
+    },
+    {
+      "id": "6",
+      "fname": "Jantje",
+      "lname": "Tilbuerger",
+      "classYear": 2024,
+      "location": "Germany",
+      "dominantHand": "Left-Handed",
+      "contacted": true,
+      "notes": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
+      ]
+    },
+    {
+      "id": "7",
+      "fname": "Victoria",
+      "lname": "Rodriguez",
+      "classYear": 2026,
+      "location": "Texas",
+      "dominantHand": "Right-Handed",
+      "contacted": true,
+      "notes": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
+      ]
+    },
+    {
+      "id": "8",
+      "fname": "Jacqueline",
+      "lname": "Crawford",
+      "classYear": 2025,
+      "location": "Michigan",
+      "dominantHand": "Left-Handed",
+      "contacted": true,
+      "notes": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
+      ]
+    },
+    {
+      "id": "9",
+      "fname": "Kristina",
+      "lname": "Mathis",
+      "classYear": 2026,
+      "location": "South Carolina",
+      "dominantHand": "Right-Handed",
+      "contacted": false,
+      "notes": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
       ]
     }
   ]

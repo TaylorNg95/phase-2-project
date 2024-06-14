@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom"
 import { useState, useEffect } from "react"
-import NavBar from "../components/NavBar"
+import NavBar from "./components/NavBar"
+import { Box } from "@mui/material"
 
 function App() {
   console.log('in App')
@@ -39,7 +40,7 @@ function App() {
       <header>
         <NavBar />
       </header>
-        <Outlet context={{players: players, addPlayer, deletePlayer, editPlayer}}/>
+      <Outlet context={{players: players, addPlayer, deletePlayer, editPlayer}}/>
     </>
   )
 }

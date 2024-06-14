@@ -1,4 +1,4 @@
-import App from "./pages/App"
+import App from "./App"
 import Home from "./pages/Home"
 import PlayerList from "./pages/PlayerList"
 import NewPlayerForm from "./pages/NewPlayerForm"

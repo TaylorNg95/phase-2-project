@@ -2,6 +2,7 @@ import { useState } from "react"
 import { useOutletContext } from "react-router-dom"
 import FilterBar from "../components/FilterBar"
 import PlayerCard from "../components/PlayerCard"
+import './PlayerList.css'
 
 import { Grid, Container } from "@mui/material"
 
@@ -24,9 +25,11 @@ function PlayerList() {
         return <h1>Loading...</h1>
     } else return (
         <>
-            <h1>Player List Page</h1>
-            <FilterBar filter={filter} setFilter={setFilter} search={search} setSearch={setSearch}/>
-            <Container>
+            <h1>Player Database</h1>
+            <Container sx={{marginBottom: '2%', textAlign: 'center', fontSize: '1.25em'}}>
+                <FilterBar filter={filter} setFilter={setFilter} search={search} setSearch={setSearch}/>
+            </Container>
+            <Container sx={{marginBottom: '2%'}}> 
                 <Grid container spacing={2}>    
                     {displayedPlayers.map(player => <PlayerCard key={player.id} player={player} deletePlayer={deletePlayer}/>)}
                 </Grid>

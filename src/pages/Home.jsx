@@ -8,7 +8,7 @@ function Home() {
         textAlign="center"
         gap={4}
         p={2}
-        sx={{ fontSize: '2em', marginTop: '15%' }}
+        sx={{ fontSize: '2em', marginTop: '15%'}}
     >
         Welcome, Bob
     </Box>
