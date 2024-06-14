@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom"
 import { useState, useEffect } from "react"
 import StyledNavBar from "../materialUI/StyledNavBar"
-import NavBar from '../components/NavBar'
 
 function App() {
   console.log('in App')
@@ -38,7 +37,7 @@ function App() {
   } else return (
     <>
       <header>
-        <NavBar />
+        <StyledNavBar />
       </header>
       <h1>App Page</h1>
       <Outlet context={{players: players, addPlayer, deletePlayer, editPlayer}}/>
