@@ -7,9 +7,8 @@ function Notes() {
 
     return (
         <>
-            <h1>Notes Page</h1>
-            <h2>{player.fname} {player.lname}</h2>
-            <p>{player.notes}</p>
+            <h1>Notes: {player.fname} {player.lname}</h1>
+            <p>{player.notes ? player.notes : `No existing notes for ${player.fname} ${player.fname}`}</p>
         </>
     )
 }

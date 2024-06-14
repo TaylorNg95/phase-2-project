@@ -40,12 +40,17 @@ function NewPlayerForm() {
             })
     }
 
+    function handleNoteChange(e){
+        e.preventDefault()
+        console.log('button is functioning properly')
+    }
+
     return (
         <>
             <h1>New Player Form Page</h1>
             <form onSubmit={handleSubmit}>
-                <label>First Name: <input type='text' name='fname' value={formData.fname} onChange={handleChange}/></label><br />
-                <label>Last Name: <input type='text' name='lname' value={formData.lname} onChange={handleChange}/></label><br />
+                <label>First Name: <input type='text' name='fname' value={formData.fname} onChange={handleChange} required/></label><br />
+                <label>Last Name: <input type='text' name='lname' value={formData.lname} onChange={handleChange} required/></label><br />
                 <label>Class Year: 
                     <select name='classYear' value={formData.classYear} onChange={handleChange}>
                         <option value='2025'>2025</option>
@@ -56,7 +61,7 @@ function NewPlayerForm() {
                         <option value='2030'>2030</option>
                     </select>
                 </label><br />
-                <label>Location: <input type='text'name='location' value={formData.location} onChange={handleChange}/></label><br />
+                <label>Location: <input type='text'name='location' value={formData.location} onChange={handleChange} required/></label><br />
                 <label>Dominant Hand:
                     <select name='dominantHand' value={formData.dominantHand} onChange={handleChange}>
                         <option value='right'>Right</option>
@@ -69,7 +74,8 @@ function NewPlayerForm() {
                         <option value='true'>Yes</option>
                     </select>
                 </label><br />
-                <label>Notes:<br /><textarea rows='10' cols='50' placeholder='Add notes here' name='notes' value={formData.notes} onChange={handleChange}></textarea></label><br />
+                <label>Notes:<br /><textarea rows='5' cols='50' placeholder='Add notes here' name='notes' value={formData.notes} onChange={handleChange}></textarea></label><br />
+                <button onClick={handleNoteChange}>+ Note</button><button onClick={handleNoteChange}>- Note</button><br /><br />
                 <input type='submit' value='Add New Player'/>
             </form>
         </>
