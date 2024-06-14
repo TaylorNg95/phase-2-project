@@ -3,7 +3,7 @@ import { useNavigate, useOutletContext } from "react-router-dom"
 
 function NewPlayerForm() {
     console.log('in new player form')
-    const {addNewPlayer} = useOutletContext()
+    const {addPlayer} = useOutletContext()
     const navigate = useNavigate()
 
     const initialFormData = {
@@ -34,16 +34,16 @@ function NewPlayerForm() {
             .then(response => response.json())
             .then(newPlayer => {
                 console.log('form has been submitted: ', newPlayer)
-                addNewPlayer(newPlayer)
+                addPlayer(newPlayer)
                 setFormData(initialFormData)
                 navigate('/players')
             })
     }
 
-    function handleNoteChange(e){
+    /* function handleNoteChange(e){
         e.preventDefault()
         console.log('button is functioning properly')
-    }
+    } */
 
     return (
         <>
@@ -75,7 +75,7 @@ function NewPlayerForm() {
                     </select>
                 </label><br />
                 <label>Notes:<br /><textarea rows='5' cols='50' placeholder='Add notes here' name='notes' value={formData.notes} onChange={handleChange}></textarea></label><br />
-                <button onClick={handleNoteChange}>+ Note</button><button onClick={handleNoteChange}>- Note</button><br /><br />
+                {/* <button onClick={handleNoteChange}>+ Note</button><button onClick={handleNoteChange}>- Note</button><br /><br /> */}
                 <input type='submit' value='Add New Player'/>
             </form>
         </>

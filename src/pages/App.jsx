@@ -16,7 +16,7 @@ function App() {
       })
   }, [])
 
-  function addNewPlayer(newPlayer){
+  function addPlayer(newPlayer){
     setPlayers([...players, newPlayer])
   }
 
@@ -40,7 +40,7 @@ function App() {
         <NavBar />
       </header>
       <h1>App Page</h1>
-      <Outlet context={{players: players, addNewPlayer, deletePlayer, editPlayer}}/>
+      <Outlet context={{players: players, addPlayer, deletePlayer, editPlayer}}/>
     </>
   )
 }
