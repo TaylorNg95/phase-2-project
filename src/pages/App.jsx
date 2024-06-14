@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom"
 import { useState, useEffect } from "react"
 import StyledNavBar from "../materialUI/StyledNavBar"
+import Container from '@mui/material/Container';
 
 function App() {
   console.log('in App')
@@ -39,8 +40,9 @@ function App() {
       <header>
         <StyledNavBar />
       </header>
-      <h1>App Page</h1>
-      <Outlet context={{players: players, addPlayer, deletePlayer, editPlayer}}/>
+      <Container maxWidth="lg">
+        <Outlet context={{players: players, addPlayer, deletePlayer, editPlayer}}/>
+      </Container>
     </>
   )
 }
