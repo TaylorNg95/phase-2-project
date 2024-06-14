@@ -16,7 +16,7 @@
       "lname": "Collens",
       "classYear": 2026,
       "location": "Massachusetts",
-      "dominantHand": "Right",
+      "dominantHand": "right",
       "contacted": false,
       "notes": ["Watched her play at Aronomink. Strong for size, great sportsmanship.", "Solid player to look out for."]
     },
@@ -26,7 +26,7 @@
       "lname": "Proctor",
       "classYear": 2025,
       "location": "Florida",
-      "dominantHand": "Right",
+      "dominantHand": "right",
       "contacted": false,
       "notes": ["Watched her play at Eddy Herr. Very crafty, good hands.", "Has clearly put in some good work"]
     },
@@ -36,7 +36,7 @@
       "lname": "Sanchez",
       "classYear": 2026,
       "location": "Mexico",
-      "dominantHand": "Left",
+      "dominantHand": "left",
       "contacted": true,
       "notes": ["Watched her play at junior ITF in Mexico. Consistent and a good fighter.", "Solid doubles player as well, good awareness of the court."]
     }
