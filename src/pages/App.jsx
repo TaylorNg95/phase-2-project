@@ -32,7 +32,7 @@ function App() {
         <NavBar />
       </header>
       <h1>App Page</h1>
-      <Outlet context={{players: players, addNewPlayer, loading: loading, deletePlayer}}/>
+      <Outlet context={{players: players, addNewPlayer, deletePlayer}}/>
     </>
   )
 }

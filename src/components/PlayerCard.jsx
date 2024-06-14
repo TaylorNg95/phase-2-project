@@ -19,6 +19,7 @@ function PlayerCard({player, deletePlayer}) {
             <p>{location}</p>
             <p>{contacted ? 'Contacted' : 'Not Contacted'}</p>
             <p><Link to={`/notes/${id}`}>View Notes</Link></p>
+            <p><Link to={`/edit/${id}`}>Edit Player</Link></p>
             <button onClick={handleDelete}>Delete Player</button>
         </>
     )
