@@ -1,44 +1,56 @@
 {
   "players": [
     {
-      "id": 1,
+      "id": "1",
       "fname": "Katarina",
       "lname": "Jokic",
       "classYear": 2025,
       "location": "New York",
       "dominantHand": "right",
       "contacted": false,
-      "notes": ["Watched her play at Orange Bowl. Solid player, moves well.", "Got to see her again, feeling good about this."]
+      "notes": [
+        "Watched her play at Orange Bowl. Solid player, moves well.",
+        "Got to see her again, feeling good about this."
+      ]
     },
     {
-      "id": 2,
+      "id": "2",
       "fname": "Brittany",
       "lname": "Collens",
       "classYear": 2026,
       "location": "Massachusetts",
-      "dominantHand": "right",
+      "dominantHand": "left",
       "contacted": false,
-      "notes": ["Watched her play at Aronomink. Strong for size, great sportsmanship.", "Solid player to look out for."]
+      "notes": [
+        "Watched her play at Aronomink. Strong for size, great sportsmanship.",
+        "Solid player to look out for."
+      ]
     },
     {
-      "id": 3,
+      "id": "3",
       "fname": "Lauren",
       "lname": "Proctor",
       "classYear": 2025,
       "location": "Florida",
       "dominantHand": "right",
       "contacted": false,
-      "notes": ["Watched her play at Eddy Herr. Very crafty, good hands.", "Has clearly put in some good work"]
+      "notes": [
+        "Watched her play at Eddy Herr. Very crafty, good hands.",
+        "Has clearly put in some good work"
+      ]
     },
     {
-      "id": 4,
+      "id": "4",
       "fname": "Sofia",
       "lname": "Sanchez",
       "classYear": 2026,
       "location": "Mexico",
-      "dominantHand": "left",
+      "dominantHand": "right",
       "contacted": true,
-      "notes": ["Watched her play at junior ITF in Mexico. Consistent and a good fighter.", "Solid doubles player as well, good awareness of the court."]
+      "notes": [
+        "Watched her play at junior ITF in Mexico. Consistent and a good fighter.",
+        "Solid doubles player as well, good awareness of the court."
+      ]
     }
   ]
 }

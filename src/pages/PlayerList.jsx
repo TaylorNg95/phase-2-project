@@ -24,7 +24,7 @@ function PlayerList() {
         <>
             <h1>Player List Page</h1>
             <FilterBar filter={filter} setFilter={setFilter} search={search} setSearch={setSearch}/>
-            {players.map(player => <PlayerCard key={player.id} player={player} deletePlayer={deletePlayer}/>)}
+            {displayedPlayers.map(player => <PlayerCard key={player.id} player={player} deletePlayer={deletePlayer}/>)}
         </>
     )
 }

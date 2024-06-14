@@ -1,21 +1,38 @@
-import { useOutletContext, useParams } from "react-router-dom"
+import { useOutletContext, useParams, useNavigate } from "react-router-dom"
 import { useState } from "react"
 
 function EditForm() {
-    const {players} = useOutletContext()
+    const {players, editPlayer} = useOutletContext()
     const {id} = useParams()
-
-    const player = players.find(player => player.id === parseInt(id))
+    const navigate = useNavigate()
+    
+    const player = players.find(player => player.id === id)
     const [editFormData, setEditFormData] = useState(player)
 
     function handleChange(e){
         setEditFormData({...editFormData, [e.target.name]: e.target.value})
     }
 
+    function handleSubmit(e){
+        e.preventDefault()
+        fetch(`http://localhost:3000/players/` + id, {
+            method: 'PATCH',
+            headers: {
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(editFormData)
+        })
+            .then(response => response.json())
+            .then(updatedPlayer => {
+                editPlayer(updatedPlayer)
+                navigate('/players')
+            })
+    }
+    
     return (
         <>
             <h1>Edit Player: {player.fname} {player.lname}</h1>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>First Name: <input type='text' name='fname' value={editFormData.fname} onChange={handleChange}/></label><br />
                 <label>Last Name: <input type='text' name='lname' value={editFormData.lname} onChange={handleChange}/></label><br />
                 <label>Class Year: 
@@ -42,7 +59,7 @@ function EditForm() {
                     </select>
                 </label><br />
                 <label>Notes:<br /><textarea rows='10' cols='50' placeholder='Add notes here' name='notes' value={editFormData.notes} onChange={handleChange}></textarea></label><br />
-                <input type='submit' value='Add New Player'/>
+                <input type='submit' value='Edit Player'/>
             </form>
         </>
     )

@@ -24,6 +24,14 @@ function App() {
     setPlayers(players.filter(player => player.id !== id))
   }
 
+  function editPlayer(updatedPlayer){
+    setPlayers(players.map(player => {
+      if(player.id === updatedPlayer.id){
+        return updatedPlayer
+      } else return player
+    }))
+  }
+
   if(loading){
     return <h1>Loading...</h1>
   } else return (
@@ -32,7 +40,7 @@ function App() {
         <NavBar />
       </header>
       <h1>App Page</h1>
-      <Outlet context={{players: players, addNewPlayer, deletePlayer}}/>
+      <Outlet context={{players: players, addNewPlayer, deletePlayer, editPlayer}}/>
     </>
   )
 }
