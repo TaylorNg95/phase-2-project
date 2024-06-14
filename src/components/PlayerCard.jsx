@@ -31,7 +31,7 @@ function PlayerCard({player, deletePlayer}) {
                             {player.fname} {player.lname}
                         </Typography>
                         <Typography variant='body1' gutterBottom>
-                            {player.classYear}
+                            Class of {player.classYear}
                         </Typography>
                         <Typography variant='body2' color="text.secondary" gutterBottom>
                             {player.location}
