@@ -3,6 +3,9 @@ import { useOutletContext } from "react-router-dom"
 import FilterBar from "../components/FilterBar"
 import PlayerCard from "../components/PlayerCard"
 
+// MUI
+import Button from '@mui/material/Button';
+
 function PlayerList() {
     console.log('in player list')
     const {players, loading, deletePlayer} = useOutletContext()
