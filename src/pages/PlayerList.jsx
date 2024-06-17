@@ -26,7 +26,7 @@ function PlayerList() {
     if(loading){
         return <h1>Loading...</h1>
     } else return (
-        <Grid container spacing={2}>
+        <Grid container spacing={2} sx={{padding: '2%'}}>
             <Grid item xs={12} sx={{textAlign: 'center', margin: '2%'}}>
                 <Typography variant='h4' component='h1' sx={{textAlign: 'center'}}>Player Database</Typography>
             </Grid>

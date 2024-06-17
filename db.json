@@ -85,18 +85,6 @@
       ]
     },
     {
-      "id": "8",
-      "fname": "Jacqueline",
-      "lname": "Crawford",
-      "classYear": 2025,
-      "location": "Michigan",
-      "dominantHand": "Left-Handed",
-      "contacted": true,
-      "notes": [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
-      ]
-    },
-    {
       "id": "9",
       "fname": "Kristina",
       "lname": "Mathis",
@@ -107,16 +95,6 @@
       "notes": [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
       ]
-    },
-    {
-      "id": "e5fa",
-      "fname": "t",
-      "lname": "t",
-      "classYear": 2025,
-      "location": "t",
-      "dominantHand": "right",
-      "contacted": false,
-      "notes": "t more notes"
     }
   ]
 }

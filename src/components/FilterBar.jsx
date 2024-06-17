@@ -1,8 +1,10 @@
+import './FilterBar.css'
+
 function FilterBar({filter, setFilter, search, setSearch}) {
     return (
         <>
             <label>Filter Class:&nbsp;
-                <select value={filter} onChange={(e) => setFilter(e.target.value)}>
+                <select value={filter} onChange={(e) => setFilter(e.target.value)} id='filter'>
                     <option value='All'>All</option>
                     <option value='2025'>2025</option>
                     <option value='2026'>2026</option>
@@ -13,7 +15,7 @@ function FilterBar({filter, setFilter, search, setSearch}) {
                 </select>
             </label>&nbsp;&nbsp;
             <label>Search by Name:&nbsp;
-                <input type='text' value={search} onChange={(e) => setSearch(e.target.value)}/>
+                <input id='search' type='text' value={search} onChange={(e) => setSearch(e.target.value)}/>
             </label>
         </>
     )

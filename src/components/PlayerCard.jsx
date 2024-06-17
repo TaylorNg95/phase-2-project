@@ -2,6 +2,13 @@ import { Link } from "react-router-dom"
 
 // MUI
 import { Grid } from "@mui/material"
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import Box from "@mui/material/Box";
 
 function PlayerCard({player, deletePlayer}) {
     const {id, fname, lname, classYear, location, dominantHand, contacted} = player
@@ -13,17 +20,39 @@ function PlayerCard({player, deletePlayer}) {
             .then(response => deletePlayer(id))
         }
     }
+
+    const card = (
+        <>
+            <CardContent>
+                <Box>
+                    <Typography variant='h5' color="text.primary" sx={{display: 'inline'}}>{fname} {lname}</Typography>
+                    <Button size="small" onClick={handleDelete} sx={{float: 'right'}}><DeleteOutlineIcon /></Button>
+                </Box>
+                <Typography sx={{ mb: 1.5 }} color="text.secondary">Class of {classYear}</Typography>
+                <Typography variant="body2">{location}</Typography>
+                <Typography sx={{ mb: 1.5 }} variant="body2">{dominantHand}</Typography>
+                <Typography variant="body2">{contacted ? 'Contacted' : 'Not Contacted'}</Typography>
+            </CardContent>
+            <CardActions sx={{justifyContent: 'space-between'}}>
+                <Button size="small" variant='outlined' component={Link} to={`/notes/${id}`}>View Notes</Button>
+                <Button size="small" component={Link} to={`/edit/${id}`}>Edit</Button>
+            </CardActions>
+        </>
+    )
     
     return (
         <Grid item xs={6} sm={4} md={3}>
-            <h2>{player.fname} {player.lname}</h2>
-            <h3>Class of {player.classYear}</h3>
-            <p>{player.location}</p>
-            <p>{player.dominantHand}</p>
+            <Card variant='outlined' sx={{border: 'solid 1px'}}>
+                {card}
+            </Card>
+            {/* <h2>{fname} {lname}</h2>
+            <h3>Class of {classYear}</h3>
+            <p>{location}</p>
+            <p>{dominantHand}</p>
             <p>{contacted ? 'Contacted' : 'Not Contacted'}</p>
             <p><Link to={`/notes/${id}`}>View Notes</Link></p>
             <p><Link to={`/edit/${id}`}>Edit</Link></p>
-            <button onClick={handleDelete}>Delete</button>
+            <button onClick={handleDelete}>Delete</button> */}
         </Grid>
     )
 }

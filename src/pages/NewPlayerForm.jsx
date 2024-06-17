@@ -11,7 +11,7 @@ function NewPlayerForm() {
         lname: '',
         classYear: 2025,
         location: '',
-        dominantHand: 'right',
+        dominantHand: 'Right-Handed',
         contacted: false,
         notes: ''
     }
