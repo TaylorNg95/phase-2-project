@@ -45,9 +45,9 @@ function EditForm() {
             </Grid>
             <Grid item xs={12} sx={{textAlign: 'center', fontSize: '1.25em'}}>
                 <Box component='form' onSubmit={handleSubmit}>
-                    <TextField sx={{alignItems: 'left'}} variant='standard' name='fname' label="First Name" value={editFormData.fname} onChange={handleChange} required />&nbsp;
+                    <TextField sx={{alignItems: 'left', marginBottom: '1%'}} variant='standard' name='fname' label="First Name" value={editFormData.fname} onChange={handleChange} required />&nbsp;
                     <TextField variant='standard' name='lname' label="Last Name" value={editFormData.lname} onChange={handleChange} required /><br />
-                    <FormControl variant='standard' sx={{width: '200px'}} required>
+                    <FormControl variant='standard' sx={{width: '200px', marginBottom: '1%'}} required>
                         <InputLabel>Class Year</InputLabel>
                         <Select name='classYear' value={editFormData.classYear} onChange={handleChange}>
                             <MenuItem value='2025'>2025</MenuItem>
@@ -59,7 +59,7 @@ function EditForm() {
                         </Select>
                     </FormControl>&nbsp;
                     <TextField variant='standard' name='location' label="Location" value={editFormData.location} onChange={handleChange} required /><br />
-                    <FormControl variant='standard' sx={{width: '200px'}} required>
+                    <FormControl variant='standard' sx={{width: '200px', marginBottom: '1%'}} required>
                         <InputLabel>Dominant Hand</InputLabel>
                         <Select name='dominantHand' value={editFormData.dominantHand} onChange={handleChange}>
                             <MenuItem value='Right-Handed'>Right</MenuItem>

@@ -8,9 +8,7 @@
       "location": "New York",
       "dominantHand": "Right-Handed",
       "contacted": false,
-      "notes": [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
-      ]
+      "notes": "Watched her play in Finland. Solid off both sides, backhand more reliable than forehand. Moves very well into the court, take the ball early. Struggles with serve - can go through periods of serving well and then rack up double faults. Fiesty. Competes well, keep an eye out for her."
     },
     {
       "id": "2",
@@ -20,9 +18,7 @@
       "location": "Massachusetts",
       "dominantHand": "Left-Handed",
       "contacted": "true",
-      "notes": [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
-      ]
+      "notes": "Smaller build but very quality player. Not a ton of firepwower but definitely strong for her size. Not the best volleys but scrappy and could be a solid doubles player. Needs to improve the volleys but overall competes well, will make her teammates better and do a lot for the school. TBD: watch some additional UTR footage."
     },
     {
       "id": "3",
@@ -32,9 +28,7 @@
       "location": "Florida",
       "dominantHand": "Right-Handed",
       "contacted": false,
-      "notes": [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
-      ]
+      "notes": "Very good player with a ton of weapons. Plays a versatile game - serves and volleys, can slice, lob, angle, etc. Needs to improve on deciding which tools in her toolbox to use. Seems to have very respectful court demeanor and compete well. Would be a stong doubles player and very good singles player. Keep an eye out."
     },
     {
       "id": "4",
@@ -44,9 +38,7 @@
       "location": "Mexico",
       "dominantHand": "Right-Handed",
       "contacted": true,
-      "notes": [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
-      ]
+      "notes": "Left, solid player. Makes a lot of balls. Competes very hard and has good energy. Will have to see how good of a teammate and how strong her academics are. Volleys are okay, can improve on court positionin in doubles."
     },
     {
       "id": "5",
@@ -56,9 +48,7 @@
       "location": "Lithuania",
       "dominantHand": "Right-Handed",
       "contacted": false,
-      "notes": [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
-      ]
+      "notes": "Strong singles and doubles player. Originally from Lithuania so most likely looking at scholarship school. Need to speak with Sanela to get more info on reputation. Tall build and can cover a lot of the court. Keep an eye out."
     },
     {
       "id": "6",
@@ -67,10 +57,8 @@
       "classYear": 2024,
       "location": "Germany",
       "dominantHand": "Left-Handed",
-      "contacted": true,
-      "notes": [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
-      ]
+      "contacted": false,
+      "notes": "Older recruit, played mostly ITF juniors and has decided to enroll in university. Most likely will be looking for a scholarship school. Watched her play at Orange Bowl, competes very well. Needs to improve on variety - one dimensional player but very dangerous on the run."
     },
     {
       "id": "7",
@@ -80,9 +68,7 @@
       "location": "Texas",
       "dominantHand": "Right-Handed",
       "contacted": true,
-      "notes": [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
-      ]
+      "notes": "Grew up in Mexico, trains in San Antonio. Not sure of reputation. Even off both sides, needs to improve on court to court energy - can act like she sometimes does not try. Solid player in both singles and doubles. Need to discuss gaps in competition. Injury? Time away?"
     },
     {
       "id": "9",
@@ -92,19 +78,7 @@
       "location": "South Carolina",
       "dominantHand": "Right-Handed",
       "contacted": false,
-      "notes": [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
-      ]
-    },
-    {
-      "id": "142b",
-      "fname": "Taylor",
-      "lname": "Ng",
-      "classYear": "2027",
-      "location": "New Jersey",
-      "dominantHand": "Right-Handed",
-      "contacted": true,
-      "notes": "Great! So good"
+      "notes": "From Charleston SC, used to train at Pate Academy. Mostly home schooled and plays ITFs. Good competitor, respectful court demeanor. Not a ton of variety but very high tolerance from the baseline and able to work her way out of defensive positions. Can improve upon serve variety and angles."
     }
   ]
 }
