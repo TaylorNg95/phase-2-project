@@ -1,8 +1,8 @@
-# React + Vite
+# MyRecruiter
+Manage your sports recruiting efforts, all in one place!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+This single page application allows coaches to seamlessly manage their sports recruiting efforts. This application is geared toward coaches who want to manage their player recruits in a centralized place but can be easily adapted to other use cases within and beyond sports. The intial dashboard allows coaches to view the full list of prospective players they are tracking (including individual player details). The application has full CRUD capabilities, allowing for the addition of new players, updates to existing players, and removal of players. 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech
+This is a React application that utilizes Vite (front end) and JSON Server (back end). Styling is done using Material UI.
