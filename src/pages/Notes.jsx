@@ -8,6 +8,7 @@ import { Button } from "@mui/material"
 // -------
 
 function Notes() {
+    console.log('in notes')
     const {id} = useParams()
     const {players} = useOutletContext()
     const player = players.find(player => player.id == id)

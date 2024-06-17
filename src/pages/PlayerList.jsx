@@ -16,7 +16,6 @@ function PlayerList() {
     const [filter, setFilter] = useState('All')
     const [search, setSearch] = useState('')
     
-    console.log(players)
     const displayedPlayers = players.sort((a, b) => a.fname.toLowerCase().localeCompare(b.fname.toLowerCase()))
         .filter(player => {
             if(filter === 'All'){

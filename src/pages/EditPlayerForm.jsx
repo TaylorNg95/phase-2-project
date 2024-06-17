@@ -9,6 +9,7 @@ import { Box, FormControl, InputLabel, MenuItem, Select, TextField, Button } fro
 // -------
 
 function EditForm() {
+    console.log('in edit player form')
     const {players, editPlayer} = useOutletContext()
     const {id} = useParams()
     const navigate = useNavigate()
@@ -38,6 +39,11 @@ function EditForm() {
                 editPlayer(updatedPlayer)
                 navigate('/players')
             })
+    }
+
+    function handleCancel(e){
+        e.preventDefault()
+        navigate('/players')
     }
     
     return (
@@ -76,7 +82,8 @@ function EditForm() {
                         </Select>
                     </FormControl><br />
                     <TextField sx={{width: '405px'}} variant='standard' name='notes' label="Notes" value={editFormData.notes} onChange={handleChange} multiline placeholder='Add notes here'/><br />
-                    <Button sx={{marginTop: '2%'}} type='submit' variant='outlined'>Update</Button>
+                    <Button sx={{marginTop: '2%'}} type='submit' variant='outlined'>Update</Button><br />
+                    <Button sx={{marginTop: '1%'}} variant='text' onClick={handleCancel}>Cancel</Button>
                 </Box>
             </Grid>
         </Grid>

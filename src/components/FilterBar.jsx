@@ -3,6 +3,7 @@ import '../style/FilterBar.css'
 // -------
 
 function FilterBar({filter, setFilter, search, setSearch}) {
+    console.log('in filter bar')
     return (
         <>
             <label>Filter Class:&nbsp;

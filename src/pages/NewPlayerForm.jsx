@@ -51,6 +51,11 @@ function NewPlayerForm() {
             })
     }
 
+    function handleCancel(e){
+        e.preventDefault()
+        navigate('/players')
+    }
+
     return (
         <Grid container spacing={2} sx={{padding: '2%'}}>
             <Grid item xs={12} sx={{textAlign: 'center', margin: '2%'}}>
@@ -87,7 +92,8 @@ function NewPlayerForm() {
                         </Select>
                     </FormControl><br />
                     <TextField sx={{width: '405px'}} variant='standard' name='notes' label="Notes" value={formData.notes} onChange={handleChange} multiline placeholder='Add notes here'/><br />
-                    <Button sx={{marginTop: '2%'}} type='submit' variant='outlined'>Add</Button>
+                    <Button sx={{marginTop: '2%'}} type='submit' variant='outlined'>Add</Button><br />
+                    <Button sx={{marginTop: '1%'}} variant='text' onClick={handleCancel}>Cancel</Button>
                 </Box>
             </Grid>
         </Grid>

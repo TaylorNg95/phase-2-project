@@ -15,6 +15,7 @@ import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
 // -------
 
 function PlayerCard({player, deletePlayer}) {
+    console.log('in player card')
     const {id, fname, lname, classYear, location, dominantHand, contacted} = player
 
     function handleDelete(){

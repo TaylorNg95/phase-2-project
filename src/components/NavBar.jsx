@@ -15,7 +15,8 @@ import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOu
 
 // -------
 
-export default function NavBar() {
+function NavBar() {
+  console.log('in nav bar')
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleMenu = (event) => {
@@ -66,3 +67,5 @@ export default function NavBar() {
     </Box>
   );
 }
+
+export default NavBar
