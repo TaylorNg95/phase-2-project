@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom"
 import { useState, useEffect } from "react"
 import NavBar from "./components/NavBar"
-import { Box } from "@mui/material"
 
 function App() {
   console.log('in App')

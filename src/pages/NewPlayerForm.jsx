@@ -1,4 +1,3 @@
-import { Box, TextField } from "@mui/material"
 import { useState } from "react"
 import { useNavigate, useOutletContext } from "react-router-dom"
 
@@ -41,19 +40,9 @@ function NewPlayerForm() {
             })
     }
 
-    /* function handleNoteChange(e){
-        e.preventDefault()
-        console.log('button is functioning properly')
-    } */
-
     return (
         <>
             <h1>New Player Form Page</h1>
-            <Box component='form'>
-                <TextField id="standard-basic" label="First Name" name='fname' variant="standard" value={formData.fname} onChange={handleChange} required/><br />
-                <TextField id="standard-basic" label="Last Name" name='lname' variant="standard" value={formData.lname} onChange={handleChange} required/><br />
-                <TextField id="standard-basic" label="Location" name='location' variant="standard" value={formData.location} onChange={handleChange} required/><br />
-            </Box>
             <form onSubmit={handleSubmit}>
                 <label>First Name: <input type='text' name='fname' value={formData.fname} onChange={handleChange} required/></label><br />
                 <label>Last Name: <input type='text' name='lname' value={formData.lname} onChange={handleChange} required/></label><br />
@@ -81,7 +70,6 @@ function NewPlayerForm() {
                     </select>
                 </label><br />
                 <label>Notes:<br /><textarea rows='5' cols='50' placeholder='Add notes here' name='notes' value={formData.notes} onChange={handleChange}></textarea></label><br />
-                {/* <button onClick={handleNoteChange}>+ Note</button><button onClick={handleNoteChange}>- Note</button><br /><br /> */}
                 <input type='submit' value='Add New Player'/>
             </form>
         </>
