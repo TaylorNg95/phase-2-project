@@ -14,6 +14,7 @@ function App() {
       .then(response => response.json())
       .then(players => {
         setPlayers(players)
+        console.log(players)
         setLoading(false)
       })
   }, [])

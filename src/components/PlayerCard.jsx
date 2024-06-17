@@ -17,12 +17,13 @@ import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
 function PlayerCard({player, deletePlayer}) {
     console.log('in player card')
     const {id, fname, lname, classYear, location, dominantHand, contacted} = player
+    console.log(contacted)
 
     function handleDelete(){
         const userConfirmed = confirm(`Are you sure you want to delete ${player.fname} ${player.lname}'s profile?`)
         if(userConfirmed){
             fetch(`http://localhost:3000/players/` + id, {method: 'DELETE'})
-            .then(response => deletePlayer(id))
+                .then(response => deletePlayer(id))
         }
     }
 
