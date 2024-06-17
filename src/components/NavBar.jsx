@@ -56,7 +56,7 @@ export default function NavBar() {
             onClose={handleClose}
           >
             <MenuItem component={NavLink} onClick={handleClose} to='/players'><VisibilityOutlinedIcon aria-hidden='true'/>View All Players</MenuItem>
-            <MenuItem component={NavLink} onClick={handleClose} to='/new'><AddCircleOutlineOutlinedIcon aria-hidden='true'/>Add New Entry</MenuItem>
+            <MenuItem component={NavLink} onClick={handleClose} to='/new'><AddCircleOutlineOutlinedIcon aria-hidden='true'/>Add New Player</MenuItem>
           </Menu>
           <Typography component={Link} variant='h6' to='/' sx={{ flexGrow: 1, textDecoration: 'none', color: '#ffffff' }}>
             Recruiting Dashboard

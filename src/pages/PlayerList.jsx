@@ -4,9 +4,8 @@ import FilterBar from "../components/FilterBar"
 import PlayerCard from "../components/PlayerCard"
 
 // MUI
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import { Typography } from "@mui/material";
+import Grid from '@mui/material/Grid'
+import Typography from "@mui/material/Typography"
 
 function PlayerList() {
     console.log('in player list')

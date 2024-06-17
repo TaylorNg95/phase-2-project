@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom"
 
 // MUI
-import { Grid } from "@mui/material"
+import Grid from "@mui/material/Grid"
+import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import Box from "@mui/material/Box";
+import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
+import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
 
 function PlayerCard({player, deletePlayer}) {
     const {id, fname, lname, classYear, location, dominantHand, contacted} = player
@@ -25,13 +27,16 @@ function PlayerCard({player, deletePlayer}) {
         <>
             <CardContent>
                 <Box>
-                    <Typography variant='h5' color="text.primary" sx={{display: 'inline'}}>{fname} {lname}</Typography>
+                    <Typography variant='h6' color="text.primary" sx={{display: 'inline'}}>{fname} {lname}</Typography>
                     <Button size="small" onClick={handleDelete} sx={{float: 'right'}}><DeleteOutlineIcon /></Button>
                 </Box>
                 <Typography sx={{ mb: 1.5 }} color="text.secondary">Class of {classYear}</Typography>
                 <Typography variant="body2">{location}</Typography>
                 <Typography sx={{ mb: 1.5 }} variant="body2">{dominantHand}</Typography>
-                <Typography variant="body2">{contacted ? 'Contacted' : 'Not Contacted'}</Typography>
+                <Box>
+                    {contacted ? <CheckCircleOutlineOutlinedIcon sx={{color: 'green'}}/> : <CancelOutlinedIcon sx={{color: 'red'}} />}
+                    <Typography variant="body2" sx={{display: 'inline'}}>{contacted ? ' Contacted' : ' Not Contacted'}</Typography>
+                </Box>
             </CardContent>
             <CardActions sx={{justifyContent: 'space-between'}}>
                 <Button size="small" variant='outlined' component={Link} to={`/notes/${id}`}>View Notes</Button>

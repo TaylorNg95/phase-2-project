@@ -1,6 +1,11 @@
 import { useState } from "react"
 import { useNavigate, useOutletContext } from "react-router-dom"
 
+// MUI
+import Grid from "@mui/material/Grid"
+import Typography from '@mui/material/Typography'
+import { Box, FormControl, InputLabel, MenuItem, Select, TextField, Button } from "@mui/material"
+
 function NewPlayerForm() {
     console.log('in new player form')
     const {addPlayer} = useOutletContext()
@@ -9,10 +14,10 @@ function NewPlayerForm() {
     const initialFormData = {
         fname: '',
         lname: '',
-        classYear: 2025,
+        classYear: '',
         location: '',
-        dominantHand: 'Right-Handed',
-        contacted: false,
+        dominantHand: '',
+        contacted: '',
         notes: ''
     }
 
@@ -41,38 +46,45 @@ function NewPlayerForm() {
     }
 
     return (
-        <>
-            <h1>New Player Form Page</h1>
-            <form onSubmit={handleSubmit}>
-                <label>First Name: <input type='text' name='fname' value={formData.fname} onChange={handleChange} required/></label><br />
-                <label>Last Name: <input type='text' name='lname' value={formData.lname} onChange={handleChange} required/></label><br />
-                <label>Class Year: 
-                    <select name='classYear' value={formData.classYear} onChange={handleChange}>
-                        <option value='2025'>2025</option>
-                        <option value='2026'>2026</option>
-                        <option value='2027'>2027</option>
-                        <option value='2028'>2028</option>
-                        <option value='2029'>2029</option>
-                        <option value='2030'>2030</option>
-                    </select>
-                </label><br />
-                <label>Location: <input type='text'name='location' value={formData.location} onChange={handleChange} required/></label><br />
-                <label>Dominant Hand:
-                    <select name='dominantHand' value={formData.dominantHand} onChange={handleChange}>
-                        <option value='Right-Handed'>Right</option>
-                        <option value='Left-Handed'>Left</option>
-                    </select>
-                </label><br />
-                <label>Contacted?
-                    <select name='contacted' value={formData.contacted} onChange={handleChange}>
-                        <option value='false'>No</option>
-                        <option value='true'>Yes</option>
-                    </select>
-                </label><br />
-                <label>Notes:<br /><textarea rows='5' cols='50' placeholder='Add notes here' name='notes' value={formData.notes} onChange={handleChange}></textarea></label><br />
-                <input type='submit' value='Add New Player'/>
-            </form>
-        </>
+        <Grid container spacing={2} sx={{padding: '2%'}}>
+            <Grid item xs={12} sx={{textAlign: 'center', margin: '2%'}}>
+                <Typography variant='h4' component='h1' sx={{textAlign: 'center'}}>Add New Player</Typography>
+            </Grid>
+            <Grid item xs={12} sx={{textAlign: 'center', fontSize: '1.25em'}}>
+                <Box component='form' onSubmit={handleSubmit}>
+                    <TextField sx={{alignItems: 'left'}} variant='standard' name='fname' label="First Name" value={formData.fname} onChange={handleChange} required />&nbsp;
+                    <TextField variant='standard' name='lname' label="Last Name" value={formData.lname} onChange={handleChange} required /><br />
+                    <FormControl variant='standard' sx={{width: '200px'}} required>
+                        <InputLabel>Class Year</InputLabel>
+                        <Select name='classYear' value={formData.classYear} onChange={handleChange}>
+                            <MenuItem value='2025'>2025</MenuItem>
+                            <MenuItem value='2026'>2026</MenuItem>
+                            <MenuItem value='2027'>2027</MenuItem>
+                            <MenuItem value='2028'>2028</MenuItem>
+                            <MenuItem value='2029'>2029</MenuItem>
+                            <MenuItem value='2030'>2030</MenuItem>
+                        </Select>
+                    </FormControl>&nbsp;
+                    <TextField variant='standard' name='location' label="Location" value={formData.location} onChange={handleChange} required /><br />
+                    <FormControl variant='standard' sx={{width: '200px'}} required>
+                        <InputLabel>Dominant Hand</InputLabel>
+                        <Select name='dominantHand' value={formData.dominantHand} onChange={handleChange}>
+                            <MenuItem value='Right-Handed'>Right</MenuItem>
+                            <MenuItem value='Left-Handed'>Left</MenuItem>
+                        </Select>
+                    </FormControl>&nbsp;
+                    <FormControl variant='standard' sx={{width: '200px'}} required>
+                        <InputLabel>Contacted?</InputLabel>
+                        <Select name='contacted' value={formData.contacted} onChange={handleChange}>
+                            <MenuItem value='false'>No</MenuItem>
+                            <MenuItem value='true'>Yes</MenuItem>
+                        </Select>
+                    </FormControl><br />
+                    <TextField sx={{width: '405px'}} variant='standard' name='notes' label="Notes" value={formData.notes} onChange={handleChange} multiline /><br />
+                    <Button sx={{marginTop: '2%'}} type='submit' variant='outlined'>Add New Player</Button>
+                </Box>
+            </Grid>
+        </Grid>
     )
 }
 
