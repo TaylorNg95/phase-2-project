@@ -54,14 +54,6 @@ function PlayerCard({player, deletePlayer}) {
             <Card variant='outlined' sx={{border: 'solid 1px'}}>
                 {card}
             </Card>
-            {/* <h2>{fname} {lname}</h2>
-            <h3>Class of {classYear}</h3>
-            <p>{location}</p>
-            <p>{dominantHand}</p>
-            <p>{contacted ? 'Contacted' : 'Not Contacted'}</p>
-            <p><Link to={`/notes/${id}`}>View Notes</Link></p>
-            <p><Link to={`/edit/${id}`}>Edit</Link></p>
-            <button onClick={handleDelete}>Delete</button> */}
         </Grid>
     )
 }

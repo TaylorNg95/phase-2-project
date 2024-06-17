@@ -14,10 +14,10 @@
       "id": "2",
       "fname": "Brittany",
       "lname": "Collens",
-      "classYear": 2026,
-      "location": "Florida",
-      "dominantHand": "Left-Handed",
-      "contacted": true,
+      "classYear": "2027",
+      "location": "Massachusetts",
+      "dominantHand": "Right-Handed",
+      "contacted": false,
       "notes": "Smaller build but very quality player. Not a ton of firepower but definitely strong for her size. Not the best volleys but scrappy and could be a solid doubles player. Needs to improve the volleys but overall competes well, will make her teammates better and do a lot for the school. TBD: watch some additional UTR footage. She trains in Florida."
     },
     {
@@ -67,11 +67,11 @@
       "classYear": 2026,
       "location": "Texas",
       "dominantHand": "Right-Handed",
-      "contacted": true,
+      "contacted": false,
       "notes": "Grew up in Mexico, trains in San Antonio. Not sure of reputation. Even off both sides, needs to improve on court to court energy - can act like she sometimes does not try. Solid player in both singles and doubles. Need to discuss gaps in competition. Injury? Time away?"
     },
     {
-      "id": "9",
+      "id": "8",
       "fname": "Kristina",
       "lname": "Mathis",
       "classYear": 2026,

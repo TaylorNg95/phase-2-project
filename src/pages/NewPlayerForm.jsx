@@ -38,7 +38,8 @@ function NewPlayerForm() {
         fetch('http://localhost:3000/players', {
             method: 'POST',
             headers: {
-                'Accept': 'application/json'
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify(formData)
         })

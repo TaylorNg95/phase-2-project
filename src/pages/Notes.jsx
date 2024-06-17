@@ -11,7 +11,9 @@ function Notes() {
     console.log('in notes')
     const {id} = useParams()
     const {players} = useOutletContext()
-    const player = players.find(player => player.id === id)
+    const player = players.find(player => player.id == id)
+    // This has been intentionally changed to two equals signs since JSON server is changing IDs to strings
+    // in an unpredictable way.
 
     return (
         <Grid container spacing={2} sx={{padding: '4%'}}>

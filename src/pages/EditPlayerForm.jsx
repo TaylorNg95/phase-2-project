@@ -14,8 +14,10 @@ function EditForm() {
     const {id} = useParams()
     const navigate = useNavigate()
     
-    const player = players.find(player => player.id === id)
+    const player = players.find(player => player.id == id)
     const [editFormData, setEditFormData] = useState(player)
+    // This has been intentionally changed to two equals signs since JSON server is changing IDs to strings
+    // in an unpredictable way.
 
     function handleChange(e){
         let targetValue;

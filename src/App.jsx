@@ -29,7 +29,7 @@ function App() {
 
   function editPlayer(updatedPlayer){
     setPlayers(players.map(player => {
-      if(player.id === updatedPlayer.id){
+      if(player.id == updatedPlayer.id){
         return updatedPlayer
       } else return player
     }))
