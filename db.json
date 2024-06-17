@@ -95,6 +95,16 @@
       "notes": [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium aliquid nesciunt doloribus ullam iure earum eaque doloremque maiores vero numquam aut minus labore, odit obcaecati distinctio commodi illo saepe."
       ]
+    },
+    {
+      "id": "142b",
+      "fname": "Taylor",
+      "lname": "Ng",
+      "classYear": "2027",
+      "location": "New Jersey",
+      "dominantHand": "Right-Handed",
+      "contacted": true,
+      "notes": "Great! So good"
     }
   ]
 }

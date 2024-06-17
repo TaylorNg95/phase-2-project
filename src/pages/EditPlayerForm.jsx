@@ -1,6 +1,11 @@
 import { useOutletContext, useParams, useNavigate } from "react-router-dom"
 import { useState } from "react"
 
+// MUI
+import Grid from "@mui/material/Grid"
+import Typography from '@mui/material/Typography'
+import { Box, FormControl, InputLabel, MenuItem, Select, TextField, Button } from "@mui/material"
+
 function EditForm() {
     const {players, editPlayer} = useOutletContext()
     const {id} = useParams()
@@ -34,38 +39,45 @@ function EditForm() {
     }
     
     return (
-        <>
-            <h1>Edit Player: {player.fname} {player.lname}</h1>
-            <form onSubmit={handleSubmit}>
-                <label>First Name: <input type='text' name='fname' value={editFormData.fname} onChange={handleChange}/></label><br />
-                <label>Last Name: <input type='text' name='lname' value={editFormData.lname} onChange={handleChange}/></label><br />
-                <label>Class Year: 
-                    <select name='classYear' value={editFormData.classYear} onChange={handleChange}>
-                        <option value='2025'>2025</option>
-                        <option value='2026'>2026</option>
-                        <option value='2027'>2027</option>
-                        <option value='2028'>2028</option>
-                        <option value='2029'>2029</option>
-                        <option value='2030'>2030</option>
-                    </select>
-                </label><br />
-                <label>Location: <input type='text'name='location' value={editFormData.location} onChange={handleChange}/></label><br />
-                <label>Dominant Hand:
-                    <select name='dominantHand' value={editFormData.dominantHand} onChange={handleChange}>
-                        <option value='right'>Right</option>
-                        <option value='left'>Left</option>
-                    </select>
-                </label><br />
-                <label>Contacted?
-                    <select name='contacted' value={editFormData.contacted} onChange={handleChange}>
-                        <option value='false'>No</option>
-                        <option value='true'>Yes</option>
-                    </select>
-                </label><br />
-                <label>Notes:<br /><textarea rows='10' cols='50' placeholder='Add notes here' name='notes' value={editFormData.notes} onChange={handleChange}></textarea></label><br />
-                <input type='submit' value='Update Player'/>
-            </form>
-        </>
+        <Grid container spacing={2} sx={{padding: '2%'}}>
+            <Grid item xs={12} sx={{textAlign: 'center', margin: '2%'}}>
+                <Typography variant='h4' component='h1' sx={{textAlign: 'center'}}>Edit Player: {player.fname} {player.lname}</Typography>
+            </Grid>
+            <Grid item xs={12} sx={{textAlign: 'center', fontSize: '1.25em'}}>
+                <Box component='form' onSubmit={handleSubmit}>
+                    <TextField sx={{alignItems: 'left'}} variant='standard' name='fname' label="First Name" value={editFormData.fname} onChange={handleChange} required />&nbsp;
+                    <TextField variant='standard' name='lname' label="Last Name" value={editFormData.lname} onChange={handleChange} required /><br />
+                    <FormControl variant='standard' sx={{width: '200px'}} required>
+                        <InputLabel>Class Year</InputLabel>
+                        <Select name='classYear' value={editFormData.classYear} onChange={handleChange}>
+                            <MenuItem value='2025'>2025</MenuItem>
+                            <MenuItem value='2026'>2026</MenuItem>
+                            <MenuItem value='2027'>2027</MenuItem>
+                            <MenuItem value='2028'>2028</MenuItem>
+                            <MenuItem value='2029'>2029</MenuItem>
+                            <MenuItem value='2030'>2030</MenuItem>
+                        </Select>
+                    </FormControl>&nbsp;
+                    <TextField variant='standard' name='location' label="Location" value={editFormData.location} onChange={handleChange} required /><br />
+                    <FormControl variant='standard' sx={{width: '200px'}} required>
+                        <InputLabel>Dominant Hand</InputLabel>
+                        <Select name='dominantHand' value={editFormData.dominantHand} onChange={handleChange}>
+                            <MenuItem value='Right-Handed'>Right</MenuItem>
+                            <MenuItem value='Left-Handed'>Left</MenuItem>
+                        </Select>
+                    </FormControl>&nbsp;
+                    <FormControl variant='standard' sx={{width: '200px'}} required>
+                        <InputLabel>Contacted?</InputLabel>
+                        <Select name='contacted' value={editFormData.contacted} onChange={handleChange}>
+                            <MenuItem value='false'>No</MenuItem>
+                            <MenuItem value='true'>Yes</MenuItem>
+                        </Select>
+                    </FormControl><br />
+                    <TextField sx={{width: '405px'}} variant='standard' name='notes' label="Notes" value={editFormData.notes} onChange={handleChange} multiline placeholder='Add notes here'/><br />
+                    <Button sx={{marginTop: '2%'}} type='submit' variant='outlined'>Update Player</Button>
+                </Box>
+            </Grid>
+        </Grid>
     )
 }
 

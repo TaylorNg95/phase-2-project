@@ -84,7 +84,7 @@ function NewPlayerForm() {
                             <MenuItem value='true'>Yes</MenuItem>
                         </Select>
                     </FormControl><br />
-                    <TextField sx={{width: '405px'}} variant='standard' name='notes' label="Notes" value={formData.notes} onChange={handleChange} multiline /><br />
+                    <TextField sx={{width: '405px'}} variant='standard' name='notes' label="Notes" value={formData.notes} onChange={handleChange} multiline placeholder='Add notes here'/><br />
                     <Button sx={{marginTop: '2%'}} type='submit' variant='outlined'>Add New Player</Button>
                 </Box>
             </Grid>
