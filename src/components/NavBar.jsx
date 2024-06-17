@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import React from 'react';
 
 // MUI
@@ -58,7 +58,7 @@ export default function NavBar() {
             <MenuItem component={NavLink} onClick={handleClose} to='/players'><VisibilityOutlinedIcon aria-hidden='true'/>View All Players</MenuItem>
             <MenuItem component={NavLink} onClick={handleClose} to='/new'><AddCircleOutlineOutlinedIcon aria-hidden='true'/>Add New Entry</MenuItem>
           </Menu>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography component={Link} variant='h6' to='/' sx={{ flexGrow: 1, textDecoration: 'none', color: '#ffffff' }}>
             Recruiting Dashboard
           </Typography>
         </Toolbar>

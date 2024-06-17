@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom"
 
+// MUI
+import { Grid } from "@mui/material"
+
 function PlayerCard({player, deletePlayer}) {
     const {id, fname, lname, classYear, location, dominantHand, contacted} = player
 
@@ -12,7 +15,7 @@ function PlayerCard({player, deletePlayer}) {
     }
     
     return (
-        <div>
+        <Grid item xs={6} sm={4} md={3}>
             <h2>{player.fname} {player.lname}</h2>
             <h3>Class of {player.classYear}</h3>
             <p>{player.location}</p>
@@ -21,7 +24,7 @@ function PlayerCard({player, deletePlayer}) {
             <p><Link to={`/notes/${id}`}>View Notes</Link></p>
             <p><Link to={`/edit/${id}`}>Edit</Link></p>
             <button onClick={handleDelete}>Delete</button>
-        </div>
+        </Grid>
     )
 }
 

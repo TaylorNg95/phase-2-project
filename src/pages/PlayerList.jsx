@@ -4,7 +4,9 @@ import FilterBar from "../components/FilterBar"
 import PlayerCard from "../components/PlayerCard"
 
 // MUI
-import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import { Typography } from "@mui/material";
 
 function PlayerList() {
     console.log('in player list')
@@ -24,11 +26,15 @@ function PlayerList() {
     if(loading){
         return <h1>Loading...</h1>
     } else return (
-        <>
-            <h1>Player Database</h1>
+        <Grid container spacing={2}>
+            <Grid item xs={12} sx={{textAlign: 'center', margin: '2%'}}>
+                <Typography variant='h4' component='h1' sx={{textAlign: 'center'}}>Player Database</Typography>
+            </Grid>
+            <Grid item xs={12} sx={{textAlign: 'center', fontSize: '1.25em'}}>
                 <FilterBar filter={filter} setFilter={setFilter} search={search} setSearch={setSearch}/>
-                {displayedPlayers.map(player => <PlayerCard key={player.id} player={player} deletePlayer={deletePlayer}/>)}
-        </>
+            </Grid>
+            {displayedPlayers.map(player => <PlayerCard key={player.id} player={player} deletePlayer={deletePlayer}/>)}
+        </Grid>
     )
 }
 
