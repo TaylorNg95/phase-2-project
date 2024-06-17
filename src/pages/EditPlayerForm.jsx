@@ -6,6 +6,8 @@ import Grid from "@mui/material/Grid"
 import Typography from '@mui/material/Typography'
 import { Box, FormControl, InputLabel, MenuItem, Select, TextField, Button } from "@mui/material"
 
+// -------
+
 function EditForm() {
     const {players, editPlayer} = useOutletContext()
     const {id} = useParams()
@@ -74,7 +76,7 @@ function EditForm() {
                         </Select>
                     </FormControl><br />
                     <TextField sx={{width: '405px'}} variant='standard' name='notes' label="Notes" value={editFormData.notes} onChange={handleChange} multiline placeholder='Add notes here'/><br />
-                    <Button sx={{marginTop: '2%'}} type='submit' variant='outlined'>Update Player</Button>
+                    <Button sx={{marginTop: '2%'}} type='submit' variant='outlined'>Update</Button>
                 </Box>
             </Grid>
         </Grid>

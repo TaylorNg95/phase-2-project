@@ -13,7 +13,7 @@ import Menu from '@mui/material/Menu';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOutlined';
 
-/* aria-hidden=true */
+// -------
 
 export default function NavBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);

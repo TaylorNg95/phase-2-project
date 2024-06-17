@@ -1,5 +1,7 @@
 import './FilterBar.css'
 
+// -------
+
 function FilterBar({filter, setFilter, search, setSearch}) {
     return (
         <>

@@ -1,11 +1,14 @@
 import { useState } from "react"
-import { useOutletContext } from "react-router-dom"
+import { Link, useOutletContext } from "react-router-dom"
 import FilterBar from "../components/FilterBar"
 import PlayerCard from "../components/PlayerCard"
 
 // MUI
 import Grid from '@mui/material/Grid'
 import Typography from "@mui/material/Typography"
+import { Button } from "@mui/material"
+
+// -------
 
 function PlayerList() {
     console.log('in player list')
@@ -33,6 +36,9 @@ function PlayerList() {
                 <FilterBar filter={filter} setFilter={setFilter} search={search} setSearch={setSearch}/>
             </Grid>
             {displayedPlayers.map(player => <PlayerCard key={player.id} player={player} deletePlayer={deletePlayer}/>)}
+            <Grid item xs={12} sx={{textAlign: 'center', fontSize: '1.25em'}}>
+                <Button sx={{marginTop: '1%'}} variant='contained' component={Link} to='/new'>Add New Player</Button>
+            </Grid>
         </Grid>
     )
 }

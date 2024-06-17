@@ -12,6 +12,8 @@ import Box from "@mui/material/Box";
 import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
 import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
 
+// -------
+
 function PlayerCard({player, deletePlayer}) {
     const {id, fname, lname, classYear, location, dominantHand, contacted} = player
 

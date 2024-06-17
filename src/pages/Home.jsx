@@ -1,6 +1,8 @@
 import { Container, Typography, Button } from "@mui/material"
 import { Link } from "react-router-dom"
 
+// -------
+
 function Home() {
   return (
     <Container maxWidth='md' sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', height: '80vh'}}>

@@ -6,6 +6,8 @@ import Grid from "@mui/material/Grid"
 import Typography from '@mui/material/Typography'
 import { Box, FormControl, InputLabel, MenuItem, Select, TextField, Button } from "@mui/material"
 
+// -------
+
 function NewPlayerForm() {
     console.log('in new player form')
     const {addPlayer} = useOutletContext()
@@ -85,7 +87,7 @@ function NewPlayerForm() {
                         </Select>
                     </FormControl><br />
                     <TextField sx={{width: '405px'}} variant='standard' name='notes' label="Notes" value={formData.notes} onChange={handleChange} multiline placeholder='Add notes here'/><br />
-                    <Button sx={{marginTop: '2%'}} type='submit' variant='outlined'>Add New Player</Button>
+                    <Button sx={{marginTop: '2%'}} type='submit' variant='outlined'>Add</Button>
                 </Box>
             </Grid>
         </Grid>

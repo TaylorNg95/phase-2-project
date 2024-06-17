@@ -7,7 +7,7 @@
       "classYear": 2025,
       "location": "New York",
       "dominantHand": "Right-Handed",
-      "contacted": false,
+      "contacted": true,
       "notes": "Watched her play in Finland. Solid off both sides, backhand more reliable than forehand. Moves very well into the court, take the ball early. Struggles with serve - can go through periods of serving well and then rack up double faults. Fiesty. Competes well, keep an eye out for her."
     },
     {
@@ -15,10 +15,10 @@
       "fname": "Brittany",
       "lname": "Collens",
       "classYear": 2026,
-      "location": "Massachusetts",
+      "location": "Florida",
       "dominantHand": "Left-Handed",
-      "contacted": "true",
-      "notes": "Smaller build but very quality player. Not a ton of firepwower but definitely strong for her size. Not the best volleys but scrappy and could be a solid doubles player. Needs to improve the volleys but overall competes well, will make her teammates better and do a lot for the school. TBD: watch some additional UTR footage."
+      "contacted": true,
+      "notes": "Smaller build but very quality player. Not a ton of firepower but definitely strong for her size. Not the best volleys but scrappy and could be a solid doubles player. Needs to improve the volleys but overall competes well, will make her teammates better and do a lot for the school. TBD: watch some additional UTR footage. She trains in Florida."
     },
     {
       "id": "3",
@@ -54,7 +54,7 @@
       "id": "6",
       "fname": "Jantje",
       "lname": "Tilbuerger",
-      "classYear": 2024,
+      "classYear": 2025,
       "location": "Germany",
       "dominantHand": "Left-Handed",
       "contacted": false,
