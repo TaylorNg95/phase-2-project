@@ -10,7 +10,11 @@ function EditForm() {
     const [editFormData, setEditFormData] = useState(player)
 
     function handleChange(e){
-        setEditFormData({...editFormData, [e.target.name]: e.target.value})
+        let targetValue;
+        if(e.target.name === 'contacted'){
+            targetValue = e.target.value === 'true' ? true : false 
+        } else targetValue = e.target.value
+        setEditFormData({...editFormData, [e.target.name]: targetValue})
     }
 
     function handleSubmit(e){
@@ -59,7 +63,7 @@ function EditForm() {
                     </select>
                 </label><br />
                 <label>Notes:<br /><textarea rows='10' cols='50' placeholder='Add notes here' name='notes' value={editFormData.notes} onChange={handleChange}></textarea></label><br />
-                <input type='submit' value='Edit Player'/>
+                <input type='submit' value='Update Player'/>
             </form>
         </>
     )

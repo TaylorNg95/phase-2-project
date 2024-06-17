@@ -24,7 +24,11 @@ function NewPlayerForm() {
     const [formData, setFormData] = useState(initialFormData)
 
     function handleChange(e){
-        setFormData({...formData, [e.target.name]: e.target.value})
+        let targetValue;
+        if(e.target.name === 'contacted'){
+            targetValue = e.target.value === 'true' ? true : false 
+        } else targetValue = e.target.value
+        setFormData({...formData, [e.target.name]: targetValue})
     }
 
     function handleSubmit(e){
