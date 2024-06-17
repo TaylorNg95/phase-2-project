@@ -56,10 +56,10 @@ export default function NavBar() {
             onClose={handleClose}
           >
             <MenuItem component={NavLink} onClick={handleClose} to='/players'><VisibilityOutlinedIcon aria-hidden='true'/>View All Players</MenuItem>
-            <MenuItem component={NavLink} onClick={handleClose} to='/new'><AddCircleOutlineOutlinedIcon aria-hiddne='true'/>Add New Entry</MenuItem>
+            <MenuItem component={NavLink} onClick={handleClose} to='/new'><AddCircleOutlineOutlinedIcon aria-hidden='true'/>Add New Entry</MenuItem>
           </Menu>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Recruiting Database
+            Recruiting Dashboard
           </Typography>
         </Toolbar>
       </AppBar>

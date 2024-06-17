@@ -1,4 +1,5 @@
 import App from "./App"
+import Home from "./pages/Home"
 import PlayerList from "./pages/PlayerList"
 import NewPlayerForm from "./pages/NewPlayerForm"
 import Notes from "./pages/Notes"
@@ -11,6 +12,10 @@ const routes = [
         element: <App />,
         errorElement: <ErrorPage />,
         children: [
+            {
+                path: '/',
+                element: <Home />
+            },
             {
                 path: '/players',
                 element: <PlayerList />
